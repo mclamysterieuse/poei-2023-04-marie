@@ -20,4 +20,12 @@ public class AmazonTest {
     public void TestAmazon(){
         driver.get("https://www.amazon.fr");
     }
+    @Test
+    public void TestGoogle(){
+        driver.get("https://www.google.fr");
+    }
+    @Test
+    public void TestYoutube(){
+        driver.get("https://www.youtube.fr");
+    }
 }
