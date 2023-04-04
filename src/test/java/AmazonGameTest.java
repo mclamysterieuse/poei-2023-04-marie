@@ -27,6 +27,7 @@ public class AmazonGameTest {
     public void teardown() {
         driver.quit();
     }
+
     @Test
     public void AddToCartPriceTest() {
         // Arrange
@@ -36,7 +37,7 @@ public class AmazonGameTest {
         // Act
         HomePage homePage = new HomePage(driver);
         ProductPage productPage = new ProductPage(driver);
-        GameAndConsolesPage gameAndConsolesPage= new GameAndConsolesPage(driver);
+        GameAndConsolesPage gameAndConsolesPage = new GameAndConsolesPage(driver);
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.gameAndConsolesPage();
         searchResultPage.openResult();
@@ -44,7 +45,6 @@ public class AmazonGameTest {
 
         // Assert
         Assert.assertEquals(productPage.getAvailableDate(), availableDate);
-
     }
 
-    }
+}

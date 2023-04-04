@@ -1,4 +1,3 @@
-
 import AmazonPhone.CartPage;
 import AmazonPhone.SearchResultPage;
 import org.openqa.selenium.By;
@@ -46,7 +45,6 @@ public class AmazonPhoneTest {
         productPage.refuseInsurance();
         productPage.openCart();
         Assert.assertEquals(cartpage.getProductTitle(), keyword);
-
     }
 
 }

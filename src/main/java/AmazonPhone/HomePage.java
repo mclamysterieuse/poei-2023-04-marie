@@ -1,6 +1,5 @@
 package AmazonPhone;
 
-import AmazonGame.SearchResultPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,5 +26,4 @@ public class HomePage {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         return searchResultPage;
     }
-
 }
