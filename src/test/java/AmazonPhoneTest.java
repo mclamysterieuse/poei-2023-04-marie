@@ -19,7 +19,6 @@ public class AmazonPhoneTest {
     public void setup() {
 
         driver = new ChromeDriver();
-
         driver.get("https://www.amazon.fr");
         driver.manage().window().maximize();
         driver.findElement(By.id("sp-cc-accept")).click();
@@ -27,7 +26,7 @@ public class AmazonPhoneTest {
 
     @AfterMethod
     public void teardown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
