@@ -8,7 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
     WebDriver driver;
-    int timeoutSearch = 15;
+    int timeoutSearch = 10;
+
     By menu = By.cssSelector("#nav-hamburger-menu");
     By videoPlay = By.cssSelector("a[data-menu-id='12']");
     By allVideoPlay = By.cssSelector("#hmenu-content > ul.hmenu.hmenu-visible.hmenu-translateX > li:nth-child(3)");
@@ -32,5 +33,4 @@ public class HomePage {
         GameAndConsolesPage  gamesAndConsolesPage = new GameAndConsolesPage(driver);
         return gamesAndConsolesPage;
     }
-
 }
