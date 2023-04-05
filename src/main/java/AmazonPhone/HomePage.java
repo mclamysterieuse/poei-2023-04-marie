@@ -11,14 +11,15 @@ import java.time.Duration;
 public class HomePage {
 
     static WebDriver driver;
-    static int timeoutSearch = 10;
-    static By productBarSelector = By.cssSelector("#twotabsearchtextbox");
-    static By productResultSelector = By.cssSelector("#nav-search-submit-button");
+
+    int timeoutSearch = 10;
+    By productBarSelector = By.cssSelector("#twotabsearchtextbox");
+    By productResultSelector = By.cssSelector("#nav-search-submit-button");
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public static SearchResultPage searchProduct(String productName) {
+    public  SearchResultPage searchProduct(String productName) {
         driver.findElement(productBarSelector).sendKeys(productName + Keys.ENTER);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSearch));
         wait.until(ExpectedConditions.elementToBeClickable(productBarSelector)).click();

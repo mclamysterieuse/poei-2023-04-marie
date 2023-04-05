@@ -27,7 +27,6 @@ public class AmazonGameTest {
     public void teardown() {
         driver.quit();
     }
-
     @Test
     public void AddToCartPriceTest() {
         // Arrange

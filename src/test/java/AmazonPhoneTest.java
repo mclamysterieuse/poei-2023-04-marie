@@ -16,7 +16,6 @@ public class AmazonPhoneTest {
 
     @BeforeMethod
     public void setup() {
-
         driver = new ChromeDriver();
         driver.get("https://www.amazon.fr");
         driver.manage().window().maximize();
@@ -44,6 +43,7 @@ public class AmazonPhoneTest {
         productPage.addToCart();
         productPage.refuseInsurance();
         productPage.openCart();
+        //Assert
         Assert.assertEquals(cartpage.getProductTitle(), keyword);
     }
 
