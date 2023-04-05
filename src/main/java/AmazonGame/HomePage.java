@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
     WebDriver driver;
-    int timeoutSearch = 15;
+    int timeoutSearch = 10;
 
     By menu = By.cssSelector("#nav-hamburger-menu");
     By videoPlay = By.cssSelector("a[data-menu-id='12']");
