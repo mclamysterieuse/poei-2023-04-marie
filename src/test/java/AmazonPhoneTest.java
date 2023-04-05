@@ -40,11 +40,11 @@ public class AmazonPhoneTest {
         CartPage cartpage = new CartPage(driver);
         homePage.searchProduct(productName);
         searchResultPage.openResult();
-        //productPage.addToCart();
-        //productPage.refuseInsurance();
-        //productPage.openCart();
+        productPage.addToCart();
+        productPage.refuseInsurance();
+        productPage.openCart();
         //Assert
-        //Assert.assertEquals(cartpage.getProductTitle(), keyword);
+        Assert.assertEquals(cartpage.getProductTitle(), keyword);
     }
 
 }
